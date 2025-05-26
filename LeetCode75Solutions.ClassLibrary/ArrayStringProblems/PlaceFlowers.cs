@@ -20,7 +20,6 @@ namespace LeetCode75Solutions.ClassLibrary.ArrayStringProblems
                     if (leftIsEmpty && rightIsEmpty)
                     {
                         n--;
-
                         flowerbed[i] = 1;
                     }
                 }
