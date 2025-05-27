@@ -123,6 +123,13 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ArrayStringProblems\CanPlantFlower\CanPlaceFlowersPage.xaml.cs">
+      <DependentUpon>CanPlaceFlowersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ArrayStringProblems\CanPlantFlower\FlowerbedPlot.cs" />
+    <Compile Include="Pages\ArrayStringProblems\GCDOfStringsPage.xaml.cs">
+      <DependentUpon>GCDOfStringsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ArrayStringProblems\MergeStringsPage.xaml.cs">
       <DependentUpon>MergeStringsPage.xaml</DependentUpon>
     </Compile>
@@ -135,6 +142,8 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\plant.png" />
+    <Content Include="Assets\soil.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -152,6 +161,14 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\ArrayStringProblems\CanPlantFlower\CanPlaceFlowersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ArrayStringProblems\GCDOfStringsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\ArrayStringProblems\MergeStringsPage.xaml">
       <SubType>Designer</SubType>

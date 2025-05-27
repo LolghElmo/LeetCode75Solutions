@@ -5,7 +5,7 @@ using System.Text;
 
 namespace LeetCode75Solutions.ClassLibrary.ArrayStringProblems
 {
-    public static class GreatestCommonDivisorOfStrings
+    public static class GCDOfStrings
     {
         public static string GcdOfStrings(string str1, string str2)
         {
