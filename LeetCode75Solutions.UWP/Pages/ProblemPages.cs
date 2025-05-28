@@ -13,6 +13,7 @@ namespace LeetCode75Solutions.UWP.Pages
             { "Merge Strings", typeof(Pages.ArrayStringProblems.MergeStringsPage) },
             { "GCD Of Strings", typeof(Pages.ArrayStringProblems.GCDOfStringsPage) },
             { "Can Place Flowers", typeof(Pages.ArrayStringProblems.CanPlantFlower.CanPlaceFlowersPage) },
+            { "Kids With Candies", typeof(Pages.ArrayStringProblems.KidsWithCandies.KidsWithCandiesPage) },
 
         };
     }
