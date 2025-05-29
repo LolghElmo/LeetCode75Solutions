@@ -6,8 +6,7 @@ namespace LeetCode75Solutions.ClassLibrary.ArrayStringProblems
 {
     public class ProductOfArrayExpectSelf
     {
-        // Not so Memory Great Solution
-        public int[] ProductExceptSelf(int[] nums)
+        public static int[] ProductExceptSelf(int[] nums)
         {
             int[] result = new int[nums.Length];
             int prefix = 1;
