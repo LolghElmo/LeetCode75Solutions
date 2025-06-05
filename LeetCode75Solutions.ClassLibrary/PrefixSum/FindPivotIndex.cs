@@ -8,19 +8,18 @@ namespace LeetCode75Solutions.ClassLibrary.PrefixSum
     {
         public int PivotIndex(int[] nums)
         {
-            var preSumArr = new int[nums.Length];
+            var totalSum = 0;
+            foreach (var item in nums)
+                totalSum += item;
             int preSum = 0;
-            foreach (int i in nums)
+            for (int i = 0; i < nums.Length; i++)
             {
-                preSum += preSumArr[i];
-                preSumArr[i] = preSum;
-            }
-
-            int suf = nums.Length - 1;
-            int sufSum = 0;
-            while (suf >= 0)
-            {
-                sufSum += nums[suf];
+                int sufSum = totalSum - nums[i] - preSum;
+                if (sufSum == preSum)
+                {
+                    return i;
+                }
+                preSum += nums[i];
 
             }
             return -1;
