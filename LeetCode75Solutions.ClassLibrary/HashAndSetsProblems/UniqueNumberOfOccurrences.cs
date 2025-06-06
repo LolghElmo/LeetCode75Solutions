@@ -9,17 +9,26 @@ namespace LeetCode75Solutions.ClassLibrary.HashAndSetsProblems
     {
         public bool UniqueOccurrences(int[] arr)
         {
-            bool res = false;
-            Hashtable hashtable = new Hashtable();
-
+            Dictionary<int, int> keyValuePairs = new Dictionary<int, int>();
             foreach (int i in arr)
             {
-
+                if (keyValuePairs.ContainsKey(i))
+                {
+                    keyValuePairs[i]++;
+                }
+                else keyValuePairs[i] = 1;
+            }
+            HashSet<int> hashSet = new HashSet<int>();
+            foreach (int i in keyValuePairs.Values)
+            {
+                if (hashSet.Contains(i))
+                    return false;
+                else
+                    hashSet.Add(i);
             }
 
 
-
-            return res;
+            return true;
         }
     }
 }
